@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Graphs</title>
+
+<link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+<a href="/">Home</a>
+
+<a href="/prediction">Prediction</a>
+
+<a href="/performance">Performance</a>
+
+<a href="/charts">Charts</a>
+
+<a href="/about">About</a>
+
+</div>
+
+<div class="container">
+
+<h1>Traffic Accident Analysis</h1>
+
+<h2>Accidents by Place</h2>
+
+<img src="{{url_for('static',filename='graphs/place.png')}}">
+
+<h2>Weather Distribution</h2>
+
+<img src="{{url_for('static',filename='graphs/weather.png')}}">
+
+<h2>Risk Distribution</h2>
+
+<img src="{{url_for('static',filename='graphs/risk.png')}}">
+
+</div>
+
+</body>
+
+</html>
