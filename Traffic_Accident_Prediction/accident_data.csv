@@ -1,0 +1,11 @@
+Place,Weather,Traffic,Speed,Risk
+Hyderabad,Rainy,High,70,Medium
+Hyderabad,Clear,Medium,65,Medium
+Bangalore,Fog,Low,45,Low
+Delhi,Rainy,Medium,68,Medium
+Mumbai,Clear,High,70,High
+Chennai,Fog,Low,55,Low
+Pune,Rainy,High,75,Medium
+Kolkata,Clear,Medium,60,Low
+Ahmedabad,Fog,Medium,72,High
+Lucknow,Rainy,Low,60,Medium

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Traffic Accident Prediction</h1>
+
+<form method="POST">
+
+    Place:
+    <select name="place">
+        <option>Hyderabad</option>
+        <option>Bangalore</option>
+        <option>Chennai</option>
+        <option>Delhi</option>
+        <option>Mumbai</option>
+        <option>Kolkata</option>
+        <option>Pune</option>
+        <option>Ahmedabad</option>
+        <option>Lucknow</option>
+    </select>
+
+    <br><br>
+
+    Weather:
+    <select name="weather">
+        <option>Clear</option>
+        <option>Rainy</option>
+        <option>Fog</option>
+    </select>
+
+    <br><br>
+
+    Traffic:
+    <select name="traffic">
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+    </select>
+
+    <br><br>
+
+    Speed:
+    <input type="number" name="speed" required>
+
+    <br><br>
+
+    <input type="submit" value="Predict">
+
+</form>
+
+{% if result %}
+<h2>Predicted Risk: {{ result }}</h2>
+{% endif %}
+
+</body>
+</html>
